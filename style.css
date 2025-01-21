@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Comic Sans Ms",sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, #924e4e, #0b0b16);
+    color: #c3bfb5;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 12px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar ul li a{
+    color: #fff;
+    font-size: 19px;
+    /* font-weight: bold; */
+}
+
+.navbar ul li a:hover{
+    text-decoration: underline;
+    color:yellow;
+}
+
+.button{
+    margin-right:20px;
+}
+
+.btn{
+    width: 100px;
+    padding:5px;
+    background-color:transparent;
+    border: 1.4px solid white;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+    color: #fff;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: bold;
+    transition: .4s;
+}
+
+/* hero style start */
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.hero .hero-content{
+    margin-left:150px;
+    margin-top: 40px;
+}
+
+.hero .hero-content h4{
+    font-size: 20px;
+    font-weight: bold;
+    color: yellowgreen;
+}
+.hero .hero-content h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(147, 147, 149);
+}
+.hero .hero-content h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(62, 194, 21);
+}
+.hero .hero-content p{
+    font-size:17px;
+    font-weight: bold;
+    color:rgb(165, 159, 159);
+    width:100%;
+}
+
+button{
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+#btn{
+    width: 180px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 12px white;
+    background-color: transparent;
+    font-size: 19px;
+    font-weight: bold;
+    color: #ebe7e7;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn:hover{
+    scale: 1.1;
+    box-shadow: 0 22px 30px yellowgreen;
+}
+
+.hero .image{
+    width: 370px;
+    height: 367px;
+    background-color:transparent;
+    box-shadow: 0 22px 30px rgb(2, 144, 187);
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    margin-right:80px;
+    margin-top: 20px;
+}
+
+
+.hero .image img{
+    width:370px;
+    height: 367px;
+    border-radius: 50%;
+}
+
+.social-mediaa{
+    position: fixed;
+    bottom: 0;
+    background:transparent;
+    /* border: 1.1px solid white; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a83838;
+    width: 100%;
+    gap: 30px;
+}
+
+.social-mediaa li{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.1px solid rgb(14, 227, 238);
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 10px rgb(14, 213, 210);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.social-mediaa li:hover{
+    scale: 1.1;
+    box-shadow:  0 12px 20px rgb(134, 199, 5);
+}
+
+.social-mediaa li i{
+    font-size: 25px;
+}
+
+.btn:hover{
+    box-shadow: 0 22px 30px rgb(226, 212, 212);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .button .btn {
+        padding: 8px 16px;
+    }
+
+    #btn {
+        padding: 8px 16px;
+    }
+}
